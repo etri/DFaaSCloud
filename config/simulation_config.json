@@ -1,0 +1,16 @@
+{
+  "infiniteRunning" : false,
+  "simulationRunningDuration" : 60.0,
+  "inpControllerDecisionTime" : 1.0,
+  "infraManagerMonitoringInterval" : 1.0,
+  "resourceModalitySize" : 5,
+  "resourceModalityGap" : 200.0,
+  "funcProfileStatsDisplayInterval" : 1.0,
+  "initialSeed" : 0,
+  "agentHost" : "localhost",
+  "agentPort" : 50051,
+  "dbHost" : "localhost",
+  "dbPort" : 3306,
+  "recentNetworkTopologyFile" : "network_topology.json",
+  "dbLogging" : false
+}

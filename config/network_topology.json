@@ -1,0 +1,102 @@
+{
+  "linkList" : [ {
+    "sourceId" : 5,
+    "destId" : 3,
+    "networkingUnitCost" : 1.0,
+    "bw" : 8000.0,
+    "delay" : 10.0
+  }, {
+    "sourceId" : 3,
+    "destId" : 5,
+    "networkingUnitCost" : 1.0,
+    "bw" : 8000.0,
+    "delay" : 10.0
+  }, {
+    "sourceId" : 3,
+    "destId" : 2,
+    "networkingUnitCost" : 1.0,
+    "bw" : 8000.0,
+    "delay" : 50.0
+  }, {
+    "sourceId" : 2,
+    "destId" : 3,
+    "networkingUnitCost" : 1.0,
+    "bw" : 8000.0,
+    "delay" : 50.0
+  }, {
+    "sourceId" : 6,
+    "destId" : 5,
+    "networkingUnitCost" : 1.0,
+    "bw" : 8000.0,
+    "delay" : 1.0
+  }, {
+    "sourceId" : 5,
+    "destId" : 6,
+    "networkingUnitCost" : 1.0,
+    "bw" : 8000.0,
+    "delay" : 1.0
+  } ],
+  "nodeList" : [ {
+    "id" : 2,
+    "type" : 1,
+    "mips" : 10000,
+    "ram" : 100000000,
+    "ratePerMips" : 0.0,
+    "computingUnitCost" : 1.0,
+    "numberOfCpuCores" : 10000,
+    "queueSize" : 0,
+    "functionPlacementAgentInfo" : null
+  }, {
+    "id" : 3,
+    "type" : 2,
+    "mips" : 10000,
+    "ram" : 10000000,
+    "ratePerMips" : 0.0,
+    "computingUnitCost" : 1.0,
+    "numberOfCpuCores" : 1000,
+    "queueSize" : 0,
+    "functionPlacementAgentInfo" : null
+  }, {
+    "id" : 5,
+    "type" : 3,
+    "mips" : 10000,
+    "ram" : 1000000,
+    "ratePerMips" : 0.0,
+    "computingUnitCost" : 1.0,
+    "numberOfCpuCores" : 10,
+    "queueSize" : 0,
+    "functionPlacementAgentInfo" : {
+      "className" : "org.faas.dfaasfunctionplacementpolicy.FunctionPlacementRandomAgent",
+      "parameterValues" : []
+    }
+  } ],
+  "endDeviceList" : [ {
+    "id" : 6,
+    "sensorList" : [ {
+      "id" : 68,
+      "functionProfileId" : "bc88282c-5b46-4492-baa8-1d91d1ddc78c",
+      "actuatorId" : 70,
+      "endDeviceGroupId" : 6,
+      "type" : 5
+    }, {
+      "id" : 69,
+      "functionProfileId" : "29be08a9-1992-41a3-a657-c2a9efb51831",
+      "actuatorId" : 71,
+      "endDeviceGroupId" : 6,
+      "type" : 5
+    } ],
+    "actuatorList" : [ {
+      "id" : 70,
+      "sensorId" : 68,
+      "endDeviceGroupId" : 6,
+      "type" : 6
+    }, {
+      "id" : 71,
+      "sensorId" : 69,
+      "endDeviceGroupId" : 6,
+      "type" : 6
+    } ],
+    "type" : 4
+  } ],
+  "validateResult" : ""
+}

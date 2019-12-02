@@ -1,0 +1,193 @@
+{
+  "functionProfileList" : [ {
+    "name" : "Real-Time",
+    "functionProfileId" : "bc88282c-5b46-4492-baa8-1d91d1ddc78c",
+    "functionGrade" : 3,
+    "maximumCompletionDuration" : 50,
+    "violationUnitCost" : 1000.0,
+    "computingResourceRequirements" : {
+      "numberOfCpuCores" : 1,
+      "requiredMipsModel" : {
+        "className" : "org.faas.utils.distribution.DeterministicDistribution",
+        "parameterList" : [ {
+          "name" : "value",
+          "value" : 100.0
+        } ]
+      },
+      "memorySize" : 1
+    },
+    "functionTrafficSegmentModels" : [ {
+      "className" : "org.cloudbus.cloudsim.distributions.ExponentialDistr",
+      "parameterList" : [ {
+        "name" : "mean",
+        "value" : 0.1
+      } ]
+    } ],
+    "functionRequestArrivalProcessModels" : [ {
+      "className" : "org.cloudbus.cloudsim.distributions.ExponentialDistr",
+      "parameterList" : [ {
+        "name" : "mean",
+        "value" : 5.8
+      } ]
+    } ],
+    "requestMessageSizeModel" : {
+      "className" : "org.faas.utils.distribution.DeterministicDistribution",
+      "parameterList" : [ {
+        "name" : "value",
+        "value" : 1.0
+      } ]
+    },
+    "responseMessageSizeModel" : {
+      "className" : "org.faas.utils.distribution.DeterministicDistribution",
+      "parameterList" : [ {
+        "name" : "value",
+        "value" : 1.0
+      } ]
+    },
+    "inputDataModel" : {
+      "locationDistributionList" : [ {
+        "className" : "org.faas.utils.distribution.LocationDistribution",
+        "parameterList" : [ {
+          "name" : "coreDist",
+          "value" : 0.0
+        }, {
+          "name" : "edgeDist",
+          "value" : 0.0
+        }, {
+          "name" : "fogDist",
+          "value" : 0.0
+        }, {
+          "name" : "userDist",
+          "value" : 1.0
+        } ]
+      } ],
+      "dataSizeDistributionList" : [ {
+        "className" : "org.faas.utils.distribution.DeterministicDistribution",
+        "parameterList" : [ {
+          "name" : "value",
+          "value" : 10.0
+        } ]
+      } ]
+    },
+    "outputDataModel" : {
+      "locationDistributionList" : [ {
+        "className" : "org.faas.utils.distribution.LocationDistribution",
+        "parameterList" : [ {
+          "name" : "coreDist",
+          "value" : 0.0
+        }, {
+          "name" : "edgeDist",
+          "value" : 0.0
+        }, {
+          "name" : "fogDist",
+          "value" : 0.0
+        }, {
+          "name" : "userDist",
+          "value" : 1.0
+        } ]
+      } ],
+      "dataSizeDistributionList" : [ {
+        "className" : "org.faas.utils.distribution.DeterministicDistribution",
+        "parameterList" : [ {
+          "name" : "value",
+          "value" : 1.0
+        } ]
+      } ]
+    }
+  }, {
+    "name" : "Non-Real-Time",
+    "functionProfileId" : "29be08a9-1992-41a3-a657-c2a9efb51831",
+    "functionGrade" : 1,
+    "maximumCompletionDuration" : 100000,
+    "violationUnitCost" : 1.0,
+    "computingResourceRequirements" : {
+      "numberOfCpuCores" : 1,
+      "requiredMipsModel" : {
+        "className" : "org.faas.utils.distribution.DeterministicDistribution",
+        "parameterList" : [ {
+          "name" : "value",
+          "value" : 100.0
+        } ]
+      },
+      "memorySize" : 1
+    },
+    "functionTrafficSegmentModels" : [ {
+      "className" : "org.faas.utils.distribution.DeterministicDistribution",
+      "parameterList" : [ {
+        "name" : "value",
+        "value" : 1.85
+      } ]
+    } ],
+    "functionRequestArrivalProcessModels" : [ {
+      "className" : "org.cloudbus.cloudsim.distributions.ExponentialDistr",
+      "parameterList" : [ {
+        "name" : "mean",
+        "value" : 5.8
+      } ]
+    } ],
+    "requestMessageSizeModel" : {
+      "className" : "org.faas.utils.distribution.DeterministicDistribution",
+      "parameterList" : [ {
+        "name" : "value",
+        "value" : 1.0
+      } ]
+    },
+    "responseMessageSizeModel" : {
+      "className" : "org.faas.utils.distribution.DeterministicDistribution",
+      "parameterList" : [ {
+        "name" : "value",
+        "value" : 1.0
+      } ]
+    },
+    "inputDataModel" : {
+      "locationDistributionList" : [ {
+        "className" : "org.faas.utils.distribution.LocationDistribution",
+        "parameterList" : [ {
+          "name" : "coreDist",
+          "value" : 0.0
+        }, {
+          "name" : "edgeDist",
+          "value" : 0.0
+        }, {
+          "name" : "fogDist",
+          "value" : 0.0
+        }, {
+          "name" : "userDist",
+          "value" : 1.0
+        } ]
+      } ],
+      "dataSizeDistributionList" : [ {
+        "className" : "org.faas.utils.distribution.DeterministicDistribution",
+        "parameterList" : [ {
+          "name" : "value",
+          "value" : 10.0
+        } ]
+      } ]
+    },
+    "outputDataModel" : {
+      "locationDistributionList" : [ {
+        "className" : "org.faas.utils.distribution.LocationDistribution",
+        "parameterList" : [ {
+          "name" : "coreDist",
+          "value" : 0.0
+        }, {
+          "name" : "edgeDist",
+          "value" : 0.0
+        }, {
+          "name" : "fogDist",
+          "value" : 0.0
+        }, {
+          "name" : "userDist",
+          "value" : 1.0
+        } ]
+      } ],
+      "dataSizeDistributionList" : [ {
+        "className" : "org.faas.utils.distribution.DeterministicDistribution",
+        "parameterList" : [ {
+          "name" : "value",
+          "value" : 1.0
+        } ]
+      } ]
+    }
+  } ]
+}
